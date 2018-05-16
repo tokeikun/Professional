@@ -1,0 +1,13 @@
+{
+  "name": "ProfessionalToKeisukeHondaChromeAddon",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "プロフェショナルをケイスケホンダに置き換えるChromeアドオン",
+  "content_scripts": [
+    {
+      "matches": ["https://*.com/*"],
+      "js": ["jquery-2.1.4.min.js", "fuga.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
